@@ -1,0 +1,17 @@
+.container {
+  max-width: $tablet-lower;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $tablet-upper), (orientation: landscape) {
+    max-width: $desctop-lower;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: $desctop-upper) {
+    max-width: $desctop-upper;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
